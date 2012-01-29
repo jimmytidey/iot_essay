@@ -5,13 +5,15 @@ body {
 #container  {
 	position:absolute;
 	left:50%;
-	margin-left:-560px;
-	width:1120px;
+	margin-left:-535px;
+	width:1070px;
+	padding-bottom:80px;
 } 
 
 p {
 	font-size:13px;
 	font-family:arial;
+	line-height:20px;
 }
 
 
@@ -21,7 +23,9 @@ h3 {
 
 li {
 	font-size:13px;
-	font:arial;
+	font-family:arial;
+	margin-bottom:1em;
+	line-height:20px;
 	
 }
 
@@ -34,9 +38,9 @@ li {
 #title {
 	position:relative;
 	margin:0px auto;
-	width:400px;
+	width:660px;
 	text-align:center;
-	text-shadow: 2px 2px 0px #ded0c3;
+	text-shadow: 2px 2px 0px #c9b7a6;
 	margin-top:30px;
 	font-size:40px;
 }
@@ -44,27 +48,57 @@ li {
 #quote { 
 	margin-left:10px;	
 	text-align:center;
-	font-size: 28px;
+	font-size: 20px;
 	position:relative;
 	margin:0px auto;
 	width:600px;	
 	margin-top:50px;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	padding-top:8px;
+	padding-bottom:8px;
+	margin-bottom:80px;
 }
+
+
+
 
 #attrib { 
 	text-align:center;
-	font-size:12px;
-	margin-top:20px;
+	font-size:13px;
+	margin-top:10px;
+	
 }
+
 
 .highlight { 
+	font-style:italic;
+}
+/*
+
+#quote .highlight {
 	font-weight: bold;
-	text-shadow: 2px 2px 0px #ded0c3;
+	text-shadow: 2px 2px 0px #c9b7a6;
+	text-shadow: none;
+	font-weight:normal;
 }
 
+*/
+
+
 #blurb { 
-	margin-top:40px;
 	text-align:center;
+	font-size:30px;
+	position:relative;
+	margin:0px auto;
+	width:600px;
+	margin-top:20px;
+	font-weight:normal;
+}
+
+#blurb a {
+	color:black;
+	text-shadow: 2px 2px 0px #c9b7a6;
 }
 
 #arrow {
@@ -75,24 +109,57 @@ li {
 	margin-top:60px;
 }
 
+.snippet .little_content {
+	cursor:pointer;
+}
+
+.snippet .little_content h3:hover { 
+	text-decoration:underline;
+}
+
 #isotope {
-	margin-top:100px;
+	margin-top:70px;
 	width:1120px;
 	height:700px;  
 	padding:5px;
 }
 
+#index_panel { 
+	float:left;
+	width: 520px;
+	height: 590px;	
+}
+
+#reading_panel{
+	float:left;
+	width: 540px;
+	height: 590px;
+	margin-top:5px;
+	margin-right:5px;
+	margin-top:5px;
+}
+
 .snippet { 
 	float:left;
-	width:240px;
+	width:230px;
 	height:120px;
     background-color: #fff;
     border-top: 5px solid #353D34;
     box-shadow: 0px 0px 5px #AAAAAA;
-    margin:	5px;
     padding: 10px;
-	max-height:590px;
+	
 	overflow:auto;
+	position:relative;
+	top:-1px;
+	left:-1px;
+}
+
+.place_holder { 
+	float: left;
+	width: 246px;
+	height: 140px;
+    border: 1px dashed #353D34;
+    margin:	5px;
 }
 
 .aside { 
