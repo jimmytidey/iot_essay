@@ -1,0 +1,136 @@
+
+body, html {
+	margin:0px;
+	padding:0px;
+	background-color:#F4EAE1;
+}
+
+
+#container  {
+	position:absolute;
+	left:50%;
+	margin-left:-535px;
+	width:1070px;
+	padding-bottom:80px;
+} 
+
+p {
+	font-size:13px;
+	font-family:arial;
+	line-height:20px;
+}
+
+
+
+#title {
+	position:relative;
+	margin:0px auto;
+	width:660px;
+	text-align:center;
+	text-shadow: 2px 2px 0px #c9b7a6;
+	margin-top:30px;
+	font-size:40px;
+}
+
+#quote { 
+	margin-left:10px;	
+	text-align:center;
+	font-size: 20px;
+	position:relative;
+	margin:0px auto;
+	width:600px;	
+	margin-top:50px;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	padding-top:8px;
+	padding-bottom:8px;
+	margin-bottom:80px;
+}
+
+
+
+
+#attrib { 
+	text-align:center;
+	font-size:13px;
+	margin-top:10px;
+	
+}
+
+
+h3 {
+	margin-top:0px;
+}
+
+
+p,h2 {
+	margin-top:0px;
+	
+}
+
+h2 {
+	margin-bottom:4px;
+}
+
+#left{ 
+	float:left;
+	width:450px;
+	
+}
+
+#right{ 
+	float:right;
+	width:450px;
+	
+}
+
+#header {
+	
+	
+}
+
+#article { 
+	position:relative;
+	width: 1088px;
+	margin: 0px auto;
+	padding:10px;
+}
+
+#spectrum_image {
+	float:left;
+	margin: 0px 0px 20px 0px;
+}   
+
+#spectrum_labels {
+	margin-bottom:30px;
+}
+
+#spectrum_labels h2 {
+	text-align:center;
+	font-size:14px;
+}
+
+.spectral_line {
+	width:200px;
+	float:left;
+	margin-left:22px;
+}
+
+.spectral_line ul{
+	padding-left:5px; 
+	margin-left:0px;
+}	
+
+.spectral_line:first-child {
+	margin-left:0px;
+}
+
+
+.spacer {
+	clear:both;
+}
+
+#zoom_in {
+	border:1px solid black;
+}	
+}

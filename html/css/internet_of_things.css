@@ -1,0 +1,228 @@
+body {
+	background-color: #F4EAE1;
+}
+
+#container  {
+	position:absolute;
+	left:50%;
+	margin-left:-535px;
+	width:1070px;
+	padding-bottom:80px;
+} 
+
+p {
+	font-size:13px;
+	font-family:arial;
+	line-height:20px;
+}
+
+
+h3 {
+	margin-top:0px;
+}
+
+li {
+	font-size:13px;
+	font-family:arial;
+	margin-bottom:1em;
+	line-height:20px;
+	
+}
+
+.center {
+	margin:0px auto;
+	margin-top:10px;
+	display:block;
+}
+
+#title {
+	position:relative;
+	margin:0px auto;
+	width:660px;
+	text-align:center;
+	text-shadow: 2px 2px 0px #c9b7a6;
+	margin-top:30px;
+	font-size:40px;
+}
+
+#quote { 
+	margin-left:10px;	
+	text-align:center;
+	font-size: 20px;
+	position:relative;
+	margin:0px auto;
+	width:600px;	
+	margin-top:50px;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	padding-top:8px;
+	padding-bottom:8px;
+	margin-bottom:80px;
+}
+
+
+
+
+#attrib { 
+	text-align:center;
+	font-size:13px;
+	margin-top:10px;
+	
+}
+
+
+.highlight { 
+	font-style:italic;
+}
+/*
+
+#quote .highlight {
+	font-weight: bold;
+	text-shadow: 2px 2px 0px #c9b7a6;
+	text-shadow: none;
+	font-weight:normal;
+}
+
+*/
+
+
+#blurb { 
+	text-align:center;
+	font-size:30px;
+	position:relative;
+	margin:0px auto;
+	width:600px;
+	margin-top:20px;
+	font-weight:normal;
+}
+
+#blurb a {
+	color:black;
+	text-shadow: 2px 2px 0px #c9b7a6;
+}
+
+#arrow {
+	position:relative;
+	width:100px;
+	margin:auto;
+	display:block;
+	margin-top:60px;
+}
+
+.snippet .little_content {
+	cursor:pointer;
+}
+
+.snippet .little_content h3:hover { 
+	text-decoration:underline;
+}
+
+#isotope {
+	margin-top:70px;
+	width:1120px;
+	height:700px;  
+	padding:5px;
+}
+
+#index_panel { 
+	float:left;
+	width: 520px;
+	height: 590px;	
+}
+
+#reading_panel{
+	float:left;
+	width: 540px;
+	height: 590px;
+	margin-top:5px;
+	margin-right:5px;
+	margin-top:5px;
+}
+
+.snippet { 
+	float:left;
+	width:230px;
+	height:120px;
+    background-color: #fff;
+    border-top: 5px solid #353D34;
+    box-shadow: 0px 0px 5px #AAAAAA;
+    padding: 10px;
+	
+	overflow:auto;
+	position:relative;
+	top:-1px;
+	left:-1px;
+}
+
+.place_holder { 
+	float: left;
+	width: 246px;
+	height: 140px;
+    border: 1px dashed #353D34;
+    margin:	5px;
+}
+
+.aside { 
+	border-top: 5px solid #C9264F;
+}
+
+.big_content { 
+	display: none;
+}
+
+
+
+.next {
+	text-align:right;
+	width:100%;
+	display:block;
+}
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+       -o-transition-property:         top, left, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
