@@ -3,7 +3,7 @@ body {
 }
 
 #container  {
-	border-top: 3px solid black;
+	border-top: 4px solid #8a7e73;
 	position:absolute;
 	left:50%;
 	margin-left:-535px;
@@ -13,11 +13,12 @@ body {
 } 
 
 #main { 
-	border-bottom:5px solid black;
+	border-bottom:5px solid #8a7e73;
 	padding-bottom:10px;
 	margin-bottom:40px;
-	height:1300px;
+	height:634px;
 }
+
 p {
 	font-size:13px;
 	font-family:arial;
@@ -60,15 +61,13 @@ li {
 	position:relative;
 	margin:0px auto;
 	width:600px;	
-	margin-top:50px;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
+	margin-top:30px;
+	border-top: 1px solid #cac3bd;
+	border-bottom: 1px solid #cac3bd;
 	padding-top:8px;
-	padding-bottom:8px;
-	margin-bottom:80px;
+	padding-bottom:6px;
+	margin-bottom:60px;
 }
-
-
 
 
 #attrib { 
@@ -119,11 +118,13 @@ li {
 
 .ghost { 
     color: #E3D9CF;
-    font-size: 45px;
+    font-size: 30px;
+	line-height:1em;
     left: 1px;
     position: relative;
     text-shadow: 2px 5px 2px #F3F0ED;
-    top: 16px;
+    top: 13px;
+	text-align:center;
 }
 
 .snippet .little_content {
@@ -164,7 +165,7 @@ li {
 	width:230px;
 	height:120px;
     background-color: #fff;
-    border-top: 5px solid #353D34;
+    border-top: 6px solid #4f7047;
     box-shadow: 0px 0px 5px #AAAAAA;
     padding: 10px;
 	
@@ -173,6 +174,10 @@ li {
 	top:-1px;
 	left:-1px;
 }
+
+#reading_panel .snippet { 
+	border-top: 7px solid #4f7047;
+}	
 
 .place_holder { 
 	float: left;
