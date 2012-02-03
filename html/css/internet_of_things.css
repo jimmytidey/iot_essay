@@ -3,13 +3,21 @@ body {
 }
 
 #container  {
+	border-top: 3px solid black;
 	position:absolute;
 	left:50%;
 	margin-left:-535px;
 	width:1070px;
-	padding-bottom:80px;
+	padding-bottom:20px;
+	
 } 
 
+#main { 
+	border-bottom:5px solid black;
+	padding-bottom:10px;
+	margin-bottom:40px;
+	height:1300px;
+}
 p {
 	font-size:13px;
 	font-family:arial;
@@ -53,8 +61,8 @@ li {
 	margin:0px auto;
 	width:600px;	
 	margin-top:50px;
-	border-top: 3px solid black;
-	border-bottom: 3px solid black;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 	padding-top:8px;
 	padding-bottom:8px;
 	margin-bottom:80px;
@@ -109,6 +117,15 @@ li {
 	margin-top:60px;
 }
 
+.ghost { 
+    color: #E3D9CF;
+    font-size: 45px;
+    left: 1px;
+    position: relative;
+    text-shadow: 2px 5px 2px #F3F0ED;
+    top: 16px;
+}
+
 .snippet .little_content {
 	cursor:pointer;
 }
@@ -125,7 +142,7 @@ li {
 }
 
 #index_panel { 
-	float:left;
+	float:right;
 	width: 520px;
 	height: 590px;	
 }
@@ -133,10 +150,13 @@ li {
 #reading_panel{
 	float:left;
 	width: 540px;
-	height: 590px;
+
 	margin-top:5px;
 	margin-right:5px;
 	margin-top:5px;
+	position:absolute;
+	height:616px;
+	overflow:auto;
 }
 
 .snippet { 
@@ -149,7 +169,7 @@ li {
     padding: 10px;
 	
 	overflow:auto;
-	position:relative;
+	position:absolute;
 	top:-1px;
 	left:-1px;
 }
@@ -159,7 +179,8 @@ li {
 	width: 246px;
 	height: 140px;
     border: 1px dashed #353D34;
-    margin:	5px;
+    margin:	5px 5px 10px;
+	position:relative;
 }
 
 .aside { 
