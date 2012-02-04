@@ -6,7 +6,7 @@
 	<meta charset="utf-8">  
 	<title>Mind Matter Spectrum</title> 
 	<script src="http://code.jquery.com/jquery-1.6.1.min.js"></script> 
-	<script src="/script/script.js"></script> 
+	<script src="script/mind_matter.js"></script> 
 	<script type="text/javascript" src="http://use.typekit.com/urd8lfs.js"></script>
 	
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -24,25 +24,33 @@
 		<h1 id='title'>A long view of how technology affects us</h1>
 		
 		<div id='quote' >
-			"Why may we not say, that all Automata (Engines that move themselves by springs and wheeles as doth a watch) have an artificiall life? For what is the Heart, but a Spring; and the Nerves, but so many Strings?"
+			"Why may we not say, that all Automata have an artificiall life? For what is the Heart, but a Spring; and the Nerves, but so many Strings?"
 			
 			<p id='attrib'><em>Thomas Hobbes, introduction to Leviathan</em></p>
 			
 		</div>
 	</div>
-				
-					
+	
+	<a id='left_arrow' href='internet_of_things.html'>
+		<img  class='intro_scroll' src='resources/left_arrow.png'  >
+		<p>Internet of Things</p> 
+	</a>
+
+
+		
 	<img src='resources/spectrum.png' id='spectrum_image' >
+	
+	<img src='resources/selector.png' id='selector' >
+
 
 	<div id='spectrum_labels'> 
 		
-
 		<div id='left'>
-			<h2>Psychological</h2>
-			<p>It's well established that humans have a "Theory of Mind". Which is to say, a special reasoning process which assumes that the behaviour of others is explicable by assuming that they have a mind similar to their own. <a href='#note_1'>[1]</a></p>
 
-			<p>Autistic children are commonly said not to have a Theory of Mind, that is, they do not have a mental model for the way other people think. <a href='#note_2'>[2]</a></p>
+
+		
 		</div>	
+
 
 		<div id='intro'>
 			<h2>Two ways of thinking</h2>
@@ -50,19 +58,29 @@
 			<p>It's often said that that Japanese people have a particular affinity for understanding robots, and technology at large, because the native Shinto religion assigns a spirit to everything, even inanimate objects.</p>  
 
 			<p>My premise is that the brain is structured to understand things in in two different ways, one psychological, one physical.</p>
+
+
 		</div>
 
 
 		<div id='right'>
-			<h2>Physical</h2>
+
+			<h2>Psychological</h2>
+			<p>It's well established that humans have a "Theory of Mind". Which is to say, a special reasoning process which assumes that the behaviour of others is explicable by assuming that they have a mind similar to their own. <a href='#note_1'>[1]</a></p>
+
+			<p>Autistic children are commonly said not to have a Theory of Mind, that is, they do not have a mental model for the way other people think. <a href='#note_2'>[2]</a></p>
+
+ 			<h2>Physical</h2>
 
 			<p>Even very young children understand the physical world in a deep way [3]. Whether this is innate or not (all the evidence seems to suggest so), it's clear that humans are intuitively good at physics.  Calculating where a ball will land, and factoring in air resistance, leads to some complex maths. However, most people can catch a ball without difficulty</p>
 
 			<p>If I were to put this difference in an anecdote, I would say that to throw a rock at someone requires you to understand physics. To realise they might get annoyed and throw it back at you requires an understanding of mind.</p>
+		
+
 
 		</div>	
 		
-		<div class='spectral_line'>
+		<div class='spectral_line' id='animism'>
 			<h2>Animism</h2>
 			<p><em>Mind stuff is pervasive</em></p>
 			<p>Projection of psychological features onto everything, since there are few scientific ideas to make sense of the world.
@@ -70,11 +88,11 @@
 					<li>Aboriginal "dreamtime" Cosmogony</li> 
 					<li>Beliefs that plants, animals or places have human spirits</li>
 				</ul>		
-			</p> 
+			</p> 			
 		</div>
 
 		
-		<div class='spectral_line'>		
+		<div class='spectral_line' id='implicit_dualism'>		
 			<h2>Implicit Dualism</h2>
 			<p><em>Mind-stuff is pure and perfect, physical-stuff is secondary</em><p>
 			<p>Emergence of mathematics, deeper thought and complex mental models of the world convince physical stuff is not to be trusted. 
@@ -84,13 +102,13 @@
 			</p>
 		</div>
 		
-		<div class='spectral_line'>
+		<div class='spectral_line' id='explicit_dualism'>
 			<h2>Cartesian Explicit Dualism</h2>
 			<p><em>Mind-matter and physical are formally separately identified for the first time.</em></p>
 			<p>Descartes was the first philosopher to make dualism explicit. His view was that since we can imagine a mind without a body, and a body without a mind, they must be two separate things.</p>
 		</div>
 		
-		<div class='spectral_line'>
+		<div class='spectral_line' id='psychological_dualism'>
 			<h2>Psychological Dualism</h2> 
 			<p><em>Science and technology erode the uniqueness of mental-matter</em></p>
 			<p>Properties considered unique to mental-matter are shown not to be. Despite this, we still treat the two types of matter as separate in our everyday thought.
@@ -103,7 +121,7 @@
 			<p>			
 		</div>
 		
-		<div class='spectral_line'>
+		<div class='spectral_line' id='materialism'>
 			<h2>Materialism</h2>
 			<p>In the future, just as humans once accepted an animistic or rationalist view of the world, we will accept that the only thing that exists is physical-stuff.
 			<ul>

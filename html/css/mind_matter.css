@@ -7,6 +7,7 @@ body, html {
 
 
 #container  {
+	
 	position:absolute;
 	left:50%;
 	margin-left:-535px;
@@ -28,7 +29,7 @@ p {
 	width:660px;
 	text-align:center;
 	text-shadow: 2px 2px 0px #c9b7a6;
-	margin-top:30px;
+	margin-top:16px;
 	font-size:40px;
 }
 
@@ -39,27 +40,50 @@ p {
 	position:relative;
 	margin:0px auto;
 	width:600px;	
-	margin-top:50px;
-	border-top: 3px solid black;
-	border-bottom: 3px solid black;
+	margin-top:25px;
+	border-top: 1px solid #cac3bd;
+	border-bottom: 1px solid #cac3bd;
 	padding-top:8px;
-	padding-bottom:8px;
-	margin-bottom:80px;
+	padding-bottom:5px;
+	margin-bottom:20px;
 }
 
+#left_arrow {
+    position: absolute;
+    left: 0;
+    top: 150px;
+	text-align:left;
+}
 
+#left_arrow  p{
+	margin-top:-6px;
+	font-size:10px;
+	color:black;
+}
 
+#dynamic_explainer {
+	border:1px dashed black;
+	width: 580px;
+	height:200px;
+
+	margin:auto;
+	padding:10px;
+	padding:0px 5px;
+}
+
+#dynamic_explainer h2{
+	margin-top:0px;
+}
 
 #attrib { 
 	text-align:center;
 	font-size:13px;
 	margin-top:10px;
-	
 }
 
 
 #left{ 
-	margin-top:60px;
+
 	float:left;
 	width:340px;
 	text-align:justify;
@@ -73,7 +97,6 @@ p {
 }
 
 #right{ 
-	margin-top:60px;
 	float:right;
 	width:340px;
 	text-align:justify;
@@ -85,16 +108,23 @@ p {
 }
 	
 #article { 
+	border-top: 4px solid #8a7e73;
 	position:relative;
 	width: 1074px;
-	margin: 0px auto;
+	margin: 10px auto;
 	padding:10px;
 }
 
 #spectrum_image {
-	float:left;
-	margin: 0px 0px 20px 0px;
+
+	margin: 10px 0px 20px 0px;
 }   
+
+#selector { 
+   left: 538px;
+    position: absolute;
+    top: 368px;
+}
 
 #spectrum_labels {
 	margin-bottom:30px;
