@@ -4,14 +4,31 @@ medium = {};
 medium.changeFocus = function(elem) { 
 	console.log(elem);
 	$(elem).addClass("currently_reading");
-	$(elem).css("visibility","visible");
+	$(elem).css("display","block");
 	$("#reader").html('');
 	$(elem).appendTo("#reader");
 	
 };
 
 jQuery(document).ready(function($) {
+	
+	console.log(window.location.hash);
+	
+	if (window.location.hash == "#defining_media_by_similarity") {
+		medium.changeFocus($('#snippet_2'));
+	}
+	
+	else if (window.location.hash == "#defining_media_by_their_target") {
+		medium.changeFocus($('#snippet_3'));
+	}	
 
+	
+	else if (window.location.hash == "#unwarranted_generalisations_about_the_Internet") {
+		medium.changeFocus($('#snippet_3'));
+	}	
+	
+	else { medium.changeFocus($('#snippet_1'));}
+	
 	
 	/*
 	var paper = Raphael(10, 50, 320, 200);
@@ -22,12 +39,19 @@ jQuery(document).ready(function($) {
 	circle.attr("fill", "#f00");	
 	*/
 	
-	medium.changeFocus($('#snippet_1'));
+	
 	
 	$('.next').click(function() {
 		console.log($(this).parents());
 		var sinppet_number = $(this).parents('.snippet').attr('id').split("_")[1];
 		sinppet_number++; 
+		medium.changeFocus($('#snippet_'+sinppet_number));	
+	});
+	
+	$('.back').click(function() {
+		console.log($(this).parents());
+		var sinppet_number = $(this).parents('.snippet').attr('id').split("_")[1];
+		sinppet_number--; 
 		medium.changeFocus($('#snippet_'+sinppet_number));	
 	});
 	

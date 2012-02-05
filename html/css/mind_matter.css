@@ -98,20 +98,20 @@ p {
 #left{ 
 
 	float:left;
-	width:340px;
+	width:300px;
 	text-align:justify;
 }
 
 #intro { 
 	float:left;
 	margin-left:27px;
-	width:340px;
+	width:420px;
 	text-align:justify;
 }
 
 #right{ 
 	float:right;
-	width:340px;
+	width:300px;
 	text-align:justify;
 }
 
@@ -129,7 +129,7 @@ p {
 }
 
 #spectrum_image {
-
+	cursor:pointer;
 	margin: 10px 0px 20px 0px;
 }   
 
@@ -147,6 +147,15 @@ p {
 	text-align:center;
 	font-size:14px;
 }
+
+#top_right_arrow { 
+	margin-left:140px;
+}
+
+#top_left_arrow { 
+	margin-left:70px;
+}
+
 
 .spectral_line {
 	width:200px;

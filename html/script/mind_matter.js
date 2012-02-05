@@ -5,27 +5,27 @@ mm.specturmChange = function(destination) {
 	var position = destination;
 	
 	if (position <  312) {
-		$("#left").html($('#animism').html()); 
+		$("#intro").html($('#animism').html()); 
 		mm.destination = 103;
 	}
 	
 	else if (position >  312 && position < 534) {
-		$("#left").html($('#implicit_dualism').html()); 
+		$("#intro").html($('#implicit_dualism').html()); 
 		mm.destination = 316; 
 	}
 	
 	else if (position >  533 && position < 744) {
-		$("#left").html($('#explicit_dualism').html()); 
+		$("#intro").html($('#explicit_dualism').html()); 
 		mm.destination = 528; 
 	}
 	
 	else if (position >  744 && position < 961) {
-		$("#left").html($('#psychological_dualism').html()); 
+		$("#intro").html($('#psychological_dualism').html()); 
 		mm.destination = 746; 
 	}
 	
 	else if (position >  961) {
-		$("#left").html($('#materialism').html()); 
+		$("#intro").html($('#materialism').html()); 
 		mm.destination = 952; 
 	}			
 		
@@ -45,7 +45,25 @@ mm.specturmChange = function(destination) {
 
 jQuery(document).ready(function($) {
 	
-	mm.specturmChange(10);
+	$( "#selector" ).animate({
+	    left: "+=20"
+	  }, {
+	    duration: 200,
+	    complete: function( now, fx ){
+			$( "#selector" ).animate({
+			    left: "-=50"
+			  }, {
+			    duration: 200,
+			    complete: function( now, fx ){
+			      $( "#selector" ).	animate({
+					    left: "+=20"
+					}, {duration: 200})
+			    }
+			  });
+	    }
+	  });
+
+	
 	
 	$("#spectrum_image").click(function(e){
 		mm.specturmChange(e.pageX);
