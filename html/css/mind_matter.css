@@ -61,6 +61,19 @@ p {
 	color:black;
 }
 
+#right_arrow {
+    position: absolute;
+    right: 0;
+    top: 150px;
+	text-align:right;
+}
+
+#right_arrow  p{
+	margin-top:-6px;
+	font-size:10px;
+	color:black;
+}
+
 #dynamic_explainer {
 	border:1px dashed black;
 	width: 580px;
@@ -123,7 +136,7 @@ p {
 #selector { 
    left: 538px;
     position: absolute;
-    top: 368px;
+    top: 279px;
 }
 
 #spectrum_labels {
