@@ -54,6 +54,11 @@ li {
 	font-size:40px;
 }
 
+#title a{
+	color:black;
+	text-decoration:none;
+}	
+
 #quote { 
 	margin-left:10px;	
 	text-align:center;
@@ -170,7 +175,7 @@ li {
 	width:230px;
 	height:120px;
     background-color: #fff;
-    border-top: 6px solid #437038;
+    border-top: 6px solid #39692d;
     box-shadow: 0px 0px 5px #AAAAAA;
     padding: 10px;
 	
@@ -181,8 +186,21 @@ li {
 }
 
 #reading_panel .snippet { 
-	border-top: 7px solid #4f7047;
+	border-top: 7px solid #39692d;
 }	
+
+#note { 
+	border:1px dashed black; 
+	width:500px; 
+	margin:auto; 
+	position:relative;
+	text-align:center;
+
+}
+
+#note h3 { 
+	text-align:center;
+}
 
 .place_holder { 
 	float: left;
@@ -204,9 +222,12 @@ li {
 
 
 .next {
-	text-align:right;
+	text-align:center;
 	width:100%;
 	display:block;
+	font-size:26px;
+	text-decoration:underline;
+	cursor:pointer;
 }
 
 /**** Isotope Filtering ****/
